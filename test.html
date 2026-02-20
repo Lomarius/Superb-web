@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lomarius</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
+    <title>Document</title>
 </head>
 <body>
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <h2>Menu</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus suscipit dolor harum reprehenderit, nam sapiente odit recusandae, amet possimus consequatur. Eius consectetur itaque ex consequatur reiciendis aspernatur atque cum!</p>
+    </div>
 
-    <h1 class="title">Lomarius</h1>
+    <header class="header">
+        <div class="logo">
+            <h1>Siperb</h1>
+        </div>
+        <div class="text-banner">
+            <p>Where Innovation Meets <span class="highlight">Excellence</span></p>
+        </div>
+        <div class="en-th">
+            <p href="#">en-th</p>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Home</h1>
+            <div class="content1">
+                <div>
+                    We specialize in engineering robust CCTV systems and intelligent IT devices, delivering precise, high-performance infrastructure tailored to modern surveillance and operational needs. Our focus lies in designing, configuring, and optimizing security networks, edge devices, and integrated communication tools—empowering organizations with reliable, scalable, and future-proof technology. With core expertise in video analytics, network architecture, and device interoperability, we build foundations that enhance situational awareness, data security, and business continuity in a connected world.
+                </div>
+                <button>Contect Sale</button>
+            </div>
+            <div class="content2" >
+                <b>SUPERB COM & SERVICE CO., LTD.</b> specializes in designing and installing network systems for both public and private organizations. Whether it's local area networks (LAN) or wide area networks (WAN), we also offer expert consultation and installation of CCTV systems to enhance network security. Our company provides comprehensive services and personalized recommendations to help your business operate more efficiently and effectively. We offer dedicated pre-sales and after-sales support, with a strong emphasis on post-installation service. Our commitment to ongoing service ensures that clients receive reliable support and the highest level of satisfaction long after the project is completed.
+            </div>
+            <div class="carousel">
+                <h2 style="text-align: center;">Picture</h2>
+                <div class="track">
+                    <img src="images/img1.jpg" alt="">
+                    <img src="images/img2.jpeg" alt="">
+                    <img src="images/img3.jpg" alt="">
+                    <img src="images/img4.jpg" alt="">
+                    <img src="images/img5.jpg" alt="">
+
+                    <img src="images/img1.jpg" alt="">
+                    <img src="images/img2.jpeg" alt="">
+                    <img src="images/img3.jpg" alt="">
+                    <img src="images/img4.jpg" alt="">
+                </div>
+            </div>
+    </section>
+
+    <section id="about-us">
+        <h1>About us</h1>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam commodi reprehenderit pariatur ut ad, cumque distinctio cum, magni saepe delectus officia repellat, quam aperiam est facere atque optio id tenetur.
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum, doloribus assumenda veritatis perspiciatis aperiam! Earum, laudantium molestiae quis corporis quo vero cum quia magni deserunt debitis! Veritatis, esse excepturi?
+        </div>
+    </section>
+
+<script>
+    function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>
