@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <title>Default Page</title>
+</head>
+<body>
+    <div>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="menu-user">
+            <div class="sidebar" id="sidebar">
+                <div>Home</div>
+                <button class="login" onclick="toggleLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="inform" id="inform">
+        <form class="inform-content">
+            <div class="imgcontainer">
+                <img src="images/img1.jpg" class="avatar" alt="Avatar">
+            </div>
+            <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" name="uname" id="uname" placeholder="Enter Username">
+                <label for="psw">Password</label>
+                <input type="password" name="psw" id="psw" placeholder="Enter Password">
+                <button class="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div class="header">
+            <h1>Header Section</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation">
+            <h2>Navigation</h2>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <h3 class="top">Section 1</h3>
+                <h3 class="bottom">Section 2</h3>
+            </div>
+            <div class="right">
+                <h3 class="aside">Aside</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </footer>
+<script>
+    function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle("active");
+    }
+    function toggleLogin(){
+        document.getElementById("inform").classList.toggle("active");
+    }
+
+    const inform = document.getElementById("inform");
+    window.onclick = function(event){
+        if(event.target == inform){
+            document.getElementById("inform").classList.toggle("active");
+        }
+    }
+</script>
+</body>
+</html>
