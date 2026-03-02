@@ -96,3 +96,81 @@ body {
   to {opacity: 1}
 }
 /* content-1 */
+
+/* content-2 */
+.contain-2{
+    background-color: white;
+}
+.contain-box1{
+    text-align: right;
+    margin: 10px;
+    color: black;
+}
+.contain-box2 ,.contain-box3{
+    text-align: center;
+}
+.contain-box1 h1{
+    margin: 10px 0;
+}
+.contain-box2 p{
+    font-size: 18px;
+}
+.contain-box2 b{
+    color: rgb(22, 111, 255);
+}
+.contain-box3 p{
+    font-size: 14px;
+}
+/* content-2 */
+
+/* content-3 */
+.content-3{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    justify-items: center;
+
+    /* ขอบ fade แบบโปร */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+}
+.slide-partner-left ,.slide-partner-right{
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin: 10px 0;
+}
+.slide-partner-left{
+    animation: scrollLeft 20s linear infinite;
+}
+.slide-partner-right{
+    animation: scrollRight 20s linear infinite;
+}
+.slide-partner-left img, .slide-partner-right img{
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-25%); }
+}
+@keyframes scrollRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(25%); }
+}
+/* content-3 */

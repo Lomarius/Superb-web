@@ -39,7 +39,6 @@
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <br>
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
@@ -48,7 +47,45 @@
     </div>
     <!-- content-1 -->
 
+    <!-- content-2 -->
+     <div class="content-2">
+        <div class="container">
+            <div class="contain-box1">
+                <h1>Superb Com & Service</h1>
+            </div>
+            <div class="contain-box2">
+                <p><b>Lorem ipsum</b> dolor sit, amet consectetur adipisicing elit. Laborum nisi tenetur nihil dolorem soluta ea ducimus delectus magni facere quidem, rem maxime. Illum reiciendis commodi provident, sit ut enim delectus!</p>
+            </div>
+            <div class="contain-box3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis. Qui ratione dicta aut ad, numquam consectetur ducimus odit quaerat. Alias reiciendis eveniet corporis optio aliquid, a rem adipisci consequuntur?</p>
+            </div>
+        </div>
+     </div>
+    <!-- content-2 -->
+
+    <!-- content-3 -->
+    <div class="content-3">
+        <h1>Partner</h1>
+        <div class="slide-partner-left">
+            <img src="images/img1.jpg">
+            <img src="images/img2.jpeg">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
+            <img src="images/img5.jpg">
+        </div>
+        <div class="slide-partner-right">
+            <img src="images/img1.jpg">
+            <img src="images/img2.jpeg">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
+            <img src="images/img5.jpg">
+        </div>
+    </div>
+    
+    <!-- content-3 -->
+
 <script>
+    // content-1
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -75,6 +112,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+    // content-1
+
+    // content-3
+document.addEventListener("DOMContentLoaded", () => {
+  const tracks = document.querySelectorAll(
+    '.slide-partner-left, .slide-partner-right'
+  );
+
+  tracks.forEach(track => {
+    track.innerHTML += track.innerHTML;
+    track.innerHTML += track.innerHTML;
+  });
+});
+    // content-3
+
 </script>
 
 </body>
