@@ -180,7 +180,7 @@ body{
 }
 
 .header h1{
-    color: white;
+    color: red;
 }
 
 .header span{
@@ -237,4 +237,8 @@ ul {
 
 .gopage ul a{
     display: s;
+}
+
+.testcolor{
+    color: rgb(255, 0, 0);
 }
