@@ -16,11 +16,12 @@ body {
 /* Set up Header */
 header {
     position: fixed;
-    background-color: blue;
+    background-color: white;
     width: 100vw;
     height: auto;
     padding: 10px;
 }
+
 .nav-container {
     position: relative;
     width: 100vw;
@@ -29,6 +30,15 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: blue;
+}
+
+.nav-container a {
+    cursor: pointer;
+}
+
+.nav-container a:hover {
+    color: blue;
 }
 
 /* ---------- Set up left-nav */
@@ -57,9 +67,52 @@ header {
     align-items: center;
 }
 
-/* Set up container */
-.container {
-    position: relative;
-    width: 100vw;
+
+/* Set up dropdown-container */
+.dropdown-container {
+    width: auto;
     height: auto;
+    display: flex;
+    /*----------Control dropdown background(none - flex)*/
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+
+
+.dropdown-container a {
+    cursor: pointer;
+}
+
+/* ---------- Universal dropdown element */
+.service-container {
+    width: auto;
+    height: auto;
+    gap: 10px;
+    display: none;
+    /*---------- Control service element */
+    gap: 30px;
+}
+
+
+
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.career-container {
+    width: auto;
+    height: auto;
+    gap: 10px;
+    display: none;
+    /*---------- Control career element */
+    gap: 30px;
+}
+
+.show {
+    display: flex;
 }
