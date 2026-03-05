@@ -30,7 +30,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
 }
 
 .nav-container a {
@@ -70,14 +69,9 @@ header {
 
 /* Set up dropdown-container */
 .dropdown-container {
-    width: auto;
+    width: 100vw;
     height: auto;
     display: flex;
-    /*----------Control dropdown background(none - flex)*/
-    margin-left: 150px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color: blue;
 }
 
 
@@ -85,7 +79,7 @@ header {
     cursor: pointer;
 }
 
-/* ---------- Universal dropdown element */
+/* ---------- dropdown element */
 .service-container {
     width: auto;
     height: auto;
@@ -93,6 +87,9 @@ header {
     display: none;
     /*---------- Control service element */
     gap: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 
@@ -111,6 +108,9 @@ header {
     display: none;
     /*---------- Control career element */
     gap: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .show {
